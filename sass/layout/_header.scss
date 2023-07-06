@@ -1,0 +1,58 @@
+.header{   
+    height: 7rem;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    
+    &__right{
+        margin-right: 8rem;
+        @media only screen and (max-width:$bp-small){
+            display: none;
+        }
+        @media only screen and (max-width:$bp-medium){
+            font-size: 3rem;
+        }
+           
+    }
+    &__text{    
+        text-transform: uppercase;
+        text-decoration: none;
+        color:#837d87;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-right: 2rem;
+        font-family: sans-serif;       
+    }
+
+    &__button{    
+        width: 14rem;
+        height: 4rem;
+        border: 2px solid var(--dark-violet);
+        font-family: var(--font-family-sans-serif);
+        font-size: 1.4rem;
+        font-weight: 700;
+        background-color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: var(--very-dark-violet);
+        background-color: transparent;
+        padding: 0;
+        &:hover{
+            background: #2D2640;
+	        color: white;         
+        }         
+    }
+}
+.logo{
+    margin-left: 14rem;
+    box-sizing: inherit;
+    cursor: pointer;
+    @media only screen and (max-width:$bp-small){
+        margin-left: 2rem;
+    }
+}

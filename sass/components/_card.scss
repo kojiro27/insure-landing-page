@@ -1,0 +1,104 @@
+.card-section{
+    display: flex;
+    
+
+    @media only screen and (max-width:$bp-small){
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    }
+    
+    
+
+    &__title{
+        font-family: var(--font-family);
+        
+        margin-bottom: -34rem;
+        font-size: 7rem;
+        font-weight: 700;
+        
+        margin-left: 4rem;
+        position: relative;       
+    }
+    
+
+}
+.cards{
+    max-width: 111rem;
+    margin: 0 auto;
+    padding: 30.4rem 0 15rem;
+
+    @media only screen and (max-width:$bp-small){
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        margin-top: -25rem;      
+    }
+
+    
+
+    &__title{
+        font-family: var(--font-family);
+        font-size: 7rem;
+        margin-left: -1rem;
+        grid-column: 1/4;
+        margin-bottom: 9rem;
+        position: relative;
+        padding-top: 6rem;
+        &::before{
+            content: '';
+            width: 16.7rem;
+            border-top: 1px solid var(--grayish-blue);
+            position: absolute;
+            left: 0;
+            top: 0;
+            @media only screen and (max-width:$bp-small){
+                position: absolute;
+                left: 14rem;      
+            }
+        }
+        
+        
+    }
+    
+}
+
+.card{
+    flex: 1 1 30%;
+    margin-right: 4rem;
+
+    @media only screen and (max-width:$bp-small){
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+        text-align: center;
+        display: block;
+        margin-bottom: 3rem;
+    }
+    
+      
+    
+
+    &__icon{
+        margin-bottom: 2rem;
+        
+    }
+    &__title{
+        margin-bottom: 1.2rem;
+        font-size: 1.8rem;
+        
+
+    }
+    &__paragraph{
+        font-size: 1.4rem;
+        box-sizing: inherit;
+        color: var(--dark-grayish-violet);
+        @media only screen and (max-width:$bp-small){
+            margin-left: 10rem;
+            margin-right: 10rem;
+        }
+    }
+}

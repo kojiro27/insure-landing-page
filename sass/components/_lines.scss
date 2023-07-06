@@ -1,0 +1,40 @@
+.sol__cizgi{
+    // background-image: url(images/bg-pattern-intro-left-desktop.svg);
+    top: 39rem;
+    position: absolute;
+    left: 0rem;
+    @media only screen and (max-width:$bp-small){
+        display: none;
+    }   
+     
+}
+.sag__cizgi{
+    // background-image: url(images/bg-pattern-intro-right-desktop.svg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    @media only screen and (max-width:$bp-small){
+        display: none;
+    } 
+    @media only screen and (max-width:$bp-l){
+        display: none;
+    }  
+}
+.sag__mobilecizgi{
+    display: none;
+    @media only screen and (max-width:$bp-small){
+        display: inline;
+        position: absolute;
+        bottom: -20rem;
+        right: 0;              
+    }
+}
+.sol__mobilecizgi{
+    display: none;
+    @media only screen and (max-width:$bp-small){
+        display: inline;
+        position: absolute;
+        margin-left: 0;
+        margin-top: 60rem;              
+    }
+}
